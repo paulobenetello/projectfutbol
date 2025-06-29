@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project FutBol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkcash()">
+    <header>
+        <h1>Bem vindo ao Project FutBol!</h1>
+        <p id="cash"></p>
+    </header>
+    <main>
+        <h2>
+            Seu time:
+        </h2>
+        <button onclick="time()">Gerar Time</button>
+        <ul id="plist">
+
+        </ul>
+        <br>
+        <button onclick="sim()" class="cb">Partida</button>
+        <div id="result">
+
+        </div>
+
+        <div id="overlay">
+            <div id="info">
+                <h1>Bem vindo!</h1>
+                <br>
+                <p>Esse é um projeto de teste, muitas coisas ainda podem ser melhoradas.</p>
+                <br>
+                <h2>Como Jogar:</h2>
+                <br>
+                <p>Quando entrar clique no botão <strong>Gerar Time</strong>, isso criará um time de 11 jogadores aleatórios com atributos aleatórios, a média maxima de cada jogador é de 8 por enquanto. Clicando no botão <strong>Partida</strong> é simulado uma partida com base na média geral da equipe, caso você ganhe irá receber R$100, caso empate receberá R$50. Com esse dinheiro recebido você poderá trocar um jogador clicando nele e gastando R$300, caso queira gerar uma equipe nova inteira clique novamente em <strong>Partida</strong> e gastando R$1000 será regerado todos os jogadores.</p>
+                <br>
+                <button onclick="document.getElementById('overlay').style.display = 'none'">fechar</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
