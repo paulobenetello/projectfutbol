@@ -1,5 +1,5 @@
-const fname = ['Cole ', 'Gustavo ', 'Paulo ', 'Davi ', 'Cauã ', 'Vitor ', 'Ronaldo ', 'Cristiano '];
-const lname = ['Palmer', 'Gomez', 'Benetello', 'Roque', 'Eduardo', 'Ratão'];
+const fname = ['Cole ', 'Gustavo ', 'Paulo ', 'Davi ', 'Cauã ', 'Vitor ', 'Ronaldo ', 'Cristiano ', 'Lionel ', 'Vinícius', 'Diogo ', 'Harry ', 'Bruno ', 'Rafael ', 'Mauro ', 'Jude ', 'Gabriel ', 'Lautaro'];
+const lname = ['Palmer', 'Gomez', 'Benetello', 'Roque', 'Eduardo', 'Ratão', 'Júnior', 'Jota', 'Shampoo', 'Salah', 'Kane', 'Martinelli', 'Guimarães', 'Coutinho'];
 let player = [{
     name: '',
     pass: '',
@@ -80,6 +80,11 @@ function sim() {
             gertot += over;
         }
         console.log(gertot);
+
+        const conte = String(gertot);
+        save(conte);
+        let loc = sessionStorage.getItem("geral");
+        console.log('loc ', loc);
 
         let ganhando = Math.floor(Math.random() * 10);
         let perdendo = Math.floor(Math.random() * 3);
@@ -225,8 +230,9 @@ function forward() {
     overall = (player.pass + (player.shoot * 2) + player.mark + player.goal) / 4;
 }
 
-
-
+function save(ng){
+    sessionStorage.setItem("geral", ng);
+}
 
 //function proibida heheheh
 function saf(){
