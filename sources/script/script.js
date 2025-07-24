@@ -1,4 +1,4 @@
-const fname = ['Cole ', 'Gustavo ', 'Paulo ', 'Davi ', 'Cauã ', 'Vitor ', 'Ronaldo ', 'Cristiano ', 'Lionel ', 'Vinícius', 'Diogo ', 'Harry ', 'Bruno ', 'Rafael ', 'Mauro ', 'Jude ', 'Gabriel ', 'Lautaro'];
+const fname = ['Cole ', 'Gustavo ', 'Paulo ', 'Davi ', 'Cauã ', 'Vitor ', 'Ronaldo ', 'Cristiano ', 'Lionel ', 'Vinícius ', 'Diogo ', 'Harry ', 'Bruno ', 'Rafael ', 'Mauro ', 'Jude ', 'Gabriel ', 'Lautaro '];
 const lname = ['Palmer', 'Gomez', 'Benetello', 'Roque', 'Eduardo', 'Ratão', 'Júnior', 'Jota', 'Shampoo', 'Salah', 'Kane', 'Martinelli', 'Guimarães', 'Coutinho'];
 let player = [{
     name: '',
@@ -230,8 +230,16 @@ function forward() {
     overall = (player.pass + (player.shoot * 2) + player.mark + player.goal) / 4;
 }
 
+function cpag(id){
+    document.getElementById('pag1').style.display = 'none';
+    document.getElementById('pag2').style.display = 'none';
+    document.getElementById(id).style.display = 'block';
+}
+
+//save(q eu to fazendo aq)
 function save(ng){
     sessionStorage.setItem("geral", ng);
+    sessionStorage.setItem("Money", cash);
 }
 
 //function proibida heheheh

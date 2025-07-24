@@ -1,9 +1,10 @@
 button {
-    margin-left: 20px;
+    margin: 5px 20px;
 }
 
 h2 {
     margin-left: 20px;
+    margin-bottom: 5px;
 }
 
 main {

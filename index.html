@@ -13,18 +13,23 @@
         <p id="cash"></p>
     </header>
     <main>
-        <h2>
-            Seu time:
-        </h2>
-        <button onclick="time()">Gerar Time</button>
-        <!-- <a href="sources/npages/camp.html" target="_self" rel="next">Participar de um Campeonato</a> -->
-        <ul id="plist">
+        <div id="pag1">
+            <h2>
+                Seu time:
+            </h2>
+            <button onclick="time()">Gerar Time</button>
+            <button onclick="cpag('pag2')">Participar de um Campeonato</button>
+            <ul id="plist">
+            </ul>
+            <br>
+            <button onclick="sim()" class="cb">Partida</button>
+            <div id="result">
+            </div>
+        </div>
 
-        </ul>
-        <br>
-        <button onclick="sim()" class="cb">Partida</button>
-        <div id="result">
-
+        <div id="pag2" style="display: none;">
+            <button onclick="cpag('pag1')">Voltar</button>
+            <span></span>
         </div>
 
         <div id="overlay">
