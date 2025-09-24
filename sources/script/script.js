@@ -1,5 +1,5 @@
-const fname = ['Cole ', 'Gustavo ', 'Paulo ', 'Davi ', 'Cauã ', 'Vitor ', 'Ronaldo ', 'Cristiano ', 'Lionel ', 'Vinícius ', 'Diogo ', 'Harry ', 'Bruno ', 'Rafael ', 'Mauro ', 'Jude ', 'Gabriel ', 'Lautaro '];
-const lname = ['Palmer', 'Gomez', 'Benetello', 'Roque', 'Eduardo', 'Ratão', 'Júnior', 'Jota', 'Shampoo', 'Salah', 'Kane', 'Martinelli', 'Guimarães', 'Coutinho'];
+const fname = ['Cole ', 'Gustavo ', 'Paulo ', 'Davi ', 'Cauã ', 'Vitor ', 'Ronaldo ', 'Cristiano ', 'Lionel ', 'Vinícius ', 'Diogo ', 'Harry ', 'Bruno ', 'Rafael ', 'Mauro ', 'Jude ', 'Gabriel ', 'Lautaro ', 'Andreas ', 'Kevin '];
+const lname = ['Palmer', 'Gomez', 'Benetello', 'Roque', 'Eduardo', 'Ratão', 'Júnior', 'Jota', 'Shampoo', 'Salah', 'Kane', 'Martinelli', 'Guimarães', 'Coutinho', 'Pereira'];
 let player = [{
     name: '',
     pass: '',
