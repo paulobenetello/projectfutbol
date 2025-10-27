@@ -230,20 +230,45 @@ function forward() {
     overall = (player.pass + (player.shoot * 2) + player.mark + player.goal) / 4;
 }
 
+//function proibida heheheh
+function saf(){
+    cash += 10000;
+    checkcash();
+}
+
+//COISAS PARA O CAMP
+
+//Muda de pagina
 function cpag(id){
     document.getElementById('pag1').style.display = 'none';
     document.getElementById('pag2').style.display = 'none';
     document.getElementById(id).style.display = 'block';
 }
 
+//Play geral
+function playCamp(valor, jogos){
+    let list = document.getElementById('plist');
+    if (list.children.length < 11) {
+        alert('Primeiro gere seus jogadores');
+    }else if(cash < valor){
+        alert('Dinheiro Insuficiente');
+    }else{
+    cash -= valor;
+    checkcash();
+    }
+
+    for (let i = 0; i < jogos; i++) {
+        simCamp();
+    }
+}
+
+//Simulação jogo Camp
+function simCamp(njogo, tjogos){
+    let ger = sessionStorage.getItem("geral");
+}
+
 //save(q eu to fazendo aq)
 function save(ng){
     sessionStorage.setItem("geral", ng);
     sessionStorage.setItem("Money", cash);
-}
-
-//function proibida heheheh
-function saf(){
-    cash += 10000;
-    checkcash();
-}
+} 
